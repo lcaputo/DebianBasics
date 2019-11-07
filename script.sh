@@ -16,7 +16,8 @@ sudo apt-get install -y \
     software-properties-common \
     neofetch \
     lxde \
-    xrdp 
+    xrdp \
+    ufw 
 # INSTALAR JDK8
 wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
 sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
@@ -32,5 +33,6 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 # 
-sudo apt install -y maven  	 	
-
+sudo apt install -y maven  	
+sudo ufw allow 3389 	
+sed -i 's/console/anybody/g' /etc/X11/Xwrapper.config
