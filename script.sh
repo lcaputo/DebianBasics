@@ -1,4 +1,4 @@
-#!/bin/bash
+A#!/bin/bash
 # RUNTIME - DEBIAN10
 sudo apt-get update
 sudo apt-get upgrade -y 
@@ -21,7 +21,7 @@ sudo apt-get install -y \
 wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
 sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
 sudo apt update
-sudo apt install adoptopenjdk-8-hotspot
+sudo apt install -y adoptopenjdk-8-hotspot
 # INSTALAR DOCKER
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
@@ -30,7 +30,7 @@ sudo add-apt-repository \
    $(lsb_release -cs) \
    stable"
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 # 
-sudo apt install maven  	 	
+sudo apt install -y maven  	 	
 
