@@ -1,11 +1,5 @@
 #!/bin/bash
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/debian \
-   $(lsb_release -cs) \
-   stable"
-"echo"
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-sudo apt-key fingerprint 0EBFCD88
+# RUNTIME - DEBIAN10
 sudo apt-get update
 sudo apt-get upgrade -y 
 sudo apt-get dist-upgrade -y
@@ -22,6 +16,21 @@ sudo apt-get install -y \
     software-properties-common \
     neofetch \
     lxde \
-    xrdp \
-
+    xrdp 
+# INSTALAR JDK8
+wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
+sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
+sudo apt update
+sudo apt install adoptopenjdk-8-hotspot
+# INSTALAR DOCKER
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/debian \
+   $(lsb_release -cs) \
+   stable"
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+# 
+sudo apt install maven  	 	
 
