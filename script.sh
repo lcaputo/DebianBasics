@@ -4,10 +4,10 @@ sudo apt-get update
 sudo apt-get upgrade -y 
 sudo apt-get dist-upgrade -y
 sudo apt-get install sudo
-sudo useradd -m admin
-sudo echo admin:Admin123 | sudo chpasswd
-sudo gpasswd -a  admin sudo
-sudo usermod -aG  sudo admin
+sudo useradd -m tecnico
+sudo echo tecnico:Admin123 | sudo chpasswd
+sudo gpasswd -a  tecnico sudo
+sudo usermod -aG  sudo tecnico
 sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
