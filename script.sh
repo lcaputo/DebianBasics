@@ -36,6 +36,6 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose
 curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
 #
 sudo apt install -y maven nodejs
-npm i @angular/cli -g
+sudo npm i @angular/cli -g
 sudo ufw allow 3389 	
 sed -i 's/console/anybody/g' /etc/X11/Xwrapper.config
