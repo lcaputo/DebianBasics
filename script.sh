@@ -42,7 +42,10 @@ sudo ufw allow 3306
 curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
 # KEYMAP
 sudo apt install -y console-data maven nodejs
-setxkbmap es sundeadkeys
+sudo echo "setxkbmap latam" > init.sh
+sudo echo "gnome-terminal" >> init.sh
+sudo cp init.sh /etc/init.d
+sudo update-rc.d init.sh defaults
 sudo npm i @angular/cli -g
 sudo ufw allow 3389 	
 sed -i 's/console/anybody/g' /etc/X11/Xwrapper.config
