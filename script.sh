@@ -41,7 +41,7 @@ sudo ufw allow 3306
 # INSTALAR NODE 
 curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
 # KEYMAP
-sudo apt install -y console-data maven nodejs
+sudo apt install -y console-data maven nodejs libreoffice
 sudo echo "[Desktop Entry]" > /home/tecnico/.config/autostart/language.desktop
 sudo echo "Type=Application" >> /home/tecnico/.config/autostart/language.desktop
 sudo echo "Exec=setxkbmap latam" >> /home/tecnico/.config/autostart/language.desktop
