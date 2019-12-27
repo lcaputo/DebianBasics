@@ -12,4 +12,4 @@
 
 6) sudo chmod 777 start.sh
 
-7) ./start.sh
+7) sudo ./start.sh
