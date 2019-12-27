@@ -3,12 +3,12 @@ db:
   ports:
     - "3306:3306"
   environment:
-    MYSQL_ROOT_PASSWORD: test
-back:
-  build: .
-node:
-  image: node
-  links:
-    - db
-  ports:
-    - "8080:80"
+    MYSQL_ROOT_PASSWORD: root
+#back:
+#  build: .
+#node:
+#  image: node
+#  links:
+#    - db
+#  ports:
+#    - "8080:80"
