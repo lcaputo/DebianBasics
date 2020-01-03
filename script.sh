@@ -18,8 +18,7 @@ sudo apt-get install -y \
     xrdp \
     ufw 
 # INSTALAR INTERFACE MATE
-sudo apt-get install -y aptitude tasksel
-aptitude --without-recommends install -y ~t^standard$ ~t^desktop$ ~t^kde-desktop$
+apt install -y task-mate-desktop
 # INSTALAR JDK8
 wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
 sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
