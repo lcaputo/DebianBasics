@@ -12,13 +12,13 @@ sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
+    ufw \
     gnupg2 \
     gnome-terminal \
     software-properties-common \
     neofetch \
     lxde \
     xrdp \
-    ufw 
 # KEYMAP
 sudo apt install -y console-data 
 sudo echo "[Desktop Entry]" > /home/tecnico/.config/autostart/language.desktop
