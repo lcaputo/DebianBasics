@@ -18,7 +18,7 @@ sudo apt-get install -y \
     software-properties-common \
     neofetch \
     lxde \
-    xrdp \
+    xrdp
 # KEYMAP
 sudo apt install -y console-data 
 sudo echo "[Desktop Entry]" > /home/tecnico/.config/autostart/language.desktop
