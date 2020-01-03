@@ -17,9 +17,6 @@ sudo apt-get install -y \
     neofetch \
     xrdp \
     ufw 
-# REMOVE FUSE
-sudo apt remove -y fuse
-sudo autoremove -y
 # INSTALAR INTERFACE MATE
 apt install -y task-mate-desktop
 # INSTALAR JDK8
