@@ -17,8 +17,9 @@ sudo apt-get install -y \
     neofetch \
     xrdp \
     ufw 
-# INSTALAR INTERFACE MATE
-apt install -y task-mate-desktop
+# INSTALAR INTERFACE KDE
+sudo apt-get install -y aptitude tasksel
+aptitude --without-recommends install -y ~t^standard$ ~t^desktop$ ~t^kde-desktop$
 # INSTALAR JDK8
 wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
 sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
