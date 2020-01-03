@@ -8,8 +8,6 @@ sudo useradd -m tecnico
 sudo echo tecnico:Admin123 | sudo chpasswd
 sudo gpasswd -a  tecnico sudo
 sudo usermod -aG  sudo tecnico
-# REMOVE FUSE
-sudo apt remove --purge -y fuse
 sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
@@ -19,6 +17,8 @@ sudo apt-get install -y \
     neofetch \
     xrdp \
     ufw 
+# REMOVE FUSE
+sudo apt remove --purge -y fuse
 # INSTALAR INTERFACE MATE
 apt install -y task-mate-desktop
 # INSTALAR JDK8
