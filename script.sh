@@ -16,6 +16,8 @@ sudo apt-get install -y \
     neofetch \
     xrdp \
     ufw 
+# INSTALAR PYTHON
+sudo apt install -y python3 python3-pip
 # INSTALAR INTERFACE KDE
 sudo apt-get install -y aptitude tasksel
 aptitude --without-recommends install -y ~t^standard$ ~t^desktop$ ~t^kde-desktop$
@@ -45,5 +47,3 @@ sudo apt install -y console-data maven nodejs libreoffice
 sudo npm i @angular/cli -g
 sudo ufw allow 3389 	
 sed -i 's/console/anybody/g' /etc/X11/Xwrapper.config
-# INSTALAR PYTHON
-sudo apt install -y python3 python3-pip
