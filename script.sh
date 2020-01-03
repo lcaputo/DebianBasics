@@ -8,6 +8,8 @@ sudo useradd -m tecnico
 sudo echo tecnico:Admin123 | sudo chpasswd
 sudo gpasswd -a  tecnico sudo
 sudo usermod -aG  sudo tecnico
+# REMOVE FUSE
+sudo apt remove --purge -y fuse
 sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
