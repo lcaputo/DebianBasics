@@ -27,3 +27,4 @@ sudo apt install -y libreoffice
 sudo npm i @angular/cli -g
 sudo echo "sh ~/DebianBasics/2.sh" >> ~/.zhsrc
 sudo sed -i "s|sh ~/DebianBasics/2.sh| |g" ~/.zshrc
+exit
