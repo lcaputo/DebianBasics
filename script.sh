@@ -16,13 +16,11 @@ sudo apt-get install -y \
     neofetch \
     xrdp \
     ufw 
-# LOGIN
-su tecnico
-# INSTALAR PYTHON
-sudo apt install -y python3 python3-pip
 # UNISTALL FUSE
 sudo apt remove -y fuse
 sudo apt --purge autoremove
+# INSTALAR PYTHON
+sudo apt install -y python3 python3-pip
 # INSTALAR INTERFACE LXDE
 sudo apt-get install -y --no-install-recommends lxde
 # UTILITIES
@@ -45,7 +43,7 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose
 sudo groupadd docker
-sudo usermod -aG docker $USER
+sudo usermod -aG docker tecnico
 sudo service docker restart
 # MYSQL PORT OPEN
 sudo ufw allow 3306
