@@ -19,6 +19,8 @@ sudo apt-get install -y \
 # UNISTALL FUSE
 sudo apt remove -y fuse
 sudo apt --purge autoremove
+# LOGIN
+su tecnico
 # INSTALAR PYTHON
 sudo apt install -y python3 python3-pip
 # INSTALAR INTERFACE LXDE
@@ -27,6 +29,7 @@ sudo apt-get install -y --no-install-recommends lxde
 sudo apt install -y terminator zsh chromium
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sed -i 's/robbyrussell/af-magic/g' ~/.zshrc
+chsh -s $(which zsh)
 # INSTALAR JDK8
 wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
 sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
@@ -42,7 +45,7 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose
 sudo groupadd docker
-sudo usermod -aG docker tecnico #$(whoami)
+sudo usermod -aG docker $USER
 sudo service docker restart
 # MYSQL PORT OPEN
 sudo ufw allow 3306
