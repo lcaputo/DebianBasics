@@ -16,13 +16,13 @@ sudo apt-get install -y \
     neofetch \
     xrdp \
     ufw 
-# UNISTALL FUSE
-sudo apt remove -y fuse
-sudo apt --purge autoremove
 # LOGIN
 su tecnico
 # INSTALAR PYTHON
 sudo apt install -y python3 python3-pip
+# UNISTALL FUSE
+sudo apt remove -y fuse
+sudo apt --purge autoremove
 # INSTALAR INTERFACE LXDE
 sudo apt-get install -y --no-install-recommends lxde
 # UTILITIES
