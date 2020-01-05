@@ -30,4 +30,4 @@ sudo sed -i 's/console/anybody/g' /etc/X11/Xwrapper.config
 # UTILITIES
 sudo echo "sh ~/DebianBasics/2.sh" >> ~/.zhsrc
 sudo apt install -y terminator chromium zsh
-exit
+sudo reboot
