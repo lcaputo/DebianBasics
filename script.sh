@@ -18,10 +18,8 @@ sudo apt-get install -y \
     ufw 
 # INSTALAR PYTHON
 sudo apt install -y python3 python3-pip
-# INSTALAR INTERFACE KDE
-# sudo apt-get install -y aptitude tasksel
-# aptitude --without-recommends install -y ~t^standard$ ~t^desktop$ ~t^kde-desktop$
-sudo apt install -y lxde
+# INSTALAR INTERFACE LXDE
+sudo apt-get install -y --no-install-recommends lxde
 # INSTALAR JDK8
 wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
 sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
