@@ -28,7 +28,7 @@ sudo apt-get install -y --no-install-recommends lxde
 # UTILITIES
 sudo apt install -y terminator zsh chromium
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-sed -i 's/robbyrussell/af-magic/g' ~/.zshrc
+sudo sed -i 's/robbyrussell/af-magic/g' ~/.zshrc
 chsh -s $(which zsh)
 # INSTALAR JDK8
 wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
@@ -55,4 +55,4 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
 sudo apt install -y console-data maven nodejs libreoffice
 sudo npm i @angular/cli -g
 sudo ufw allow 3389 	
-sed -i 's/console/anybody/g' /etc/X11/Xwrapper.config
+sudo sed -i 's/console/anybody/g' /etc/X11/Xwrapper.config
