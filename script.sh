@@ -26,7 +26,7 @@ sudo apt-get install -y --no-install-recommends lxde
 # UTILITIES
 sudo apt install -y terminator zsh chromium
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-sed -i 's/robbyrussell/af-magic/g' ~./zshrc
+sed -i 's/robbyrussell/af-magic/g' ~/.zshrc
 # INSTALAR JDK8
 wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
 sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
