@@ -23,8 +23,6 @@ sudo apt-get install -y \
     neofetch \
     xrdp \
     ufw \
-    zsh
-chsh -s /bin/zsh
 # UNISTALL FUSE
 sudo apt remove -y fuse
 sudo apt --purge autoremove
