@@ -27,4 +27,8 @@ sudo apt install -y libreoffice
 sudo npm i @angular/cli -g
 sudo echo "sh ~/DebianBasics/2.sh" >> ~/.zhsrc
 sudo sed -i "s|sh ~/DebianBasics/2.sh| |g" ~/.zshrc
+sudo wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt update
+sudo apt install -y jenkins
 exit
