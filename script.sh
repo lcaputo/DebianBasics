@@ -23,7 +23,7 @@ sudo apt-get install -y \
     neofetch \
     fish \
     xrdp \
-    ufw \
+    ufw 
 sudo usermod --shell /bin/bash tecnico
 # UNISTALL FUSE
 sudo apt remove -y fuse
