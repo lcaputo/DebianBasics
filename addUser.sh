@@ -6,3 +6,4 @@ sudo useradd -m tecnico
 sudo echo tecnico:Admin123 | sudo chpasswd
 sudo gpasswd -a  tecnico sudo
 sudo usermod -aG  sudo tecnico
+exit
