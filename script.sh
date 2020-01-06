@@ -21,8 +21,10 @@ sudo apt-get install -y \
     curl \
     gnupg2 \
     neofetch \
+    fish \
     xrdp \
     ufw \
+sudo usermod --shell /bin/bash tecnico
 # UNISTALL FUSE
 sudo apt remove -y fuse
 sudo apt --purge autoremove
