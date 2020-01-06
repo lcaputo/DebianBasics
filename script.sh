@@ -22,7 +22,8 @@ sudo apt-get install -y \
     gnupg2 \
     neofetch \
     xrdp \
-    ufw 
+    ufw \
+    zsh
 # UNISTALL FUSE
 sudo apt remove -y fuse
 sudo apt --purge autoremove
@@ -62,5 +63,3 @@ sudo usermod -aG docker tecnico
 sudo service docker restart
 # MYSQL PORT OPEN
 sudo ufw allow 3306
-cp ~/DebianBasics/moreApps.sh /home/tecnico/
-sudo chmod 777 /home/tecnico/moreApps.sh
